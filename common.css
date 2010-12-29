@@ -1,0 +1,144 @@
+/* based on Bos's : http://www.w3.org/People/Bos/DesignGuide/introduction */
+
+body { 
+	background: #FFFFFF;
+	line-height: 1.35; 
+	color: #600;
+	font-family: "Trebuchet MS", sans-serif; 
+	background: white left top; 
+	margin: 0; 
+} 
+
+.intro { font-weight: bold; margin: 1em 2em }
+.important { text-align: center; font: bold 200% "Helvetica" sans-serif }
+.important { text-transform: uppercase; letter-spacing: 0.1em }
+
+a.local:before { content: "\2192" }
+
+
+div.navbar { clear: both; margin: 1em 0 }
+div.navbar p { border: none; margin: 0; text-align: center; font-weight: bold }
+div.navbar a:link, div.navbar a:visited, div.navbar p {  }
+div.navbar p, div.navbar a:link { color: white }
+div.navbar a:visited { color: #CCC }
+
+.title {
+	height: 100px;
+}
+
+img.logol { 
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+img.logor { 
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+li {
+	color: #900;
+	background: #FBFBFF;
+}
+
+h1, h2, h3  { 
+	background-color: white 
+}
+
+h1 { 
+	font-weight: normal; 
+	font-size: 200%;
+  	color: #900;
+  	text-align: center;
+  	border: 0;
+  	margin: 0;
+}
+
+h3 { 
+	font-weight: normal; 
+	color: #66C; 	 
+}
+.moreindent {
+    padding-left:50px;
+    padding-top:220px;
+}
+h2 { 
+	font-weight: normal; 
+	color: #66C; 
+	text-transform: uppercase; 
+	font-family: "Times New Roman", sans-serif; 
+	/* font-size: 140% */
+	letter-spacing: 0.1em; word-spacing: 0.1em; line-height: 1;
+/*	 margin: 3em 0 0.2em 0; */
+}
+
+
+ol {
+	background: #FBFBFF;
+	margin: 1em;
+	color: #900;
+
+}
+
+p + p { margin-top: 0 } /*  text-indent: 1em; */
+.include { background: #000; color: #0F0 } /* for debugging only */
+
+@media print {
+  div.navbar {display: none}
+  h2, h3 {color: #000; font-weight: bold}
+  h2 {margin-top: 2em; margin-bottom: 1em}
+}
+
+/*****************************/
+
+
+th, td { /* ns 4 */
+  font-family: sans-serif;
+}
+
+
+/* background should be transparent, but WebTV has a bug */
+
+
+
+h3 { font: 120% sans-serif }
+h4 { font: bold 100% sans-serif }
+h5 { font: italic 100% sans-serif }
+h6 { font: small-caps 100% sans-serif }
+
+.hide { display: none }
+
+div.head { margin-bottom: 1em }
+div.head h1 { margin-top: 2em; clear: both }
+div.head table { margin-left: 2em; margin-top: 2em }
+div.head img { color: white; border: none } /* remove border from top image */
+
+p.copyright { font-size: small }
+p.copyright small { font-size: small }
+
+@media screen {  /* hide from IE3 */
+}
+
+pre { margin-left: 2em }
+/*
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+*/
+dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+dt { font-weight: bold }
+
+pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+
+@media aural {  
+  h1, h2, h3 { stress: 20; richness: 90 }
+  .hide { speak: none }
+  p.copyright { volume: x-soft; speech-rate: x-fast }
+  dt { pause-before: 20% }
+  pre { speak-punctuation: code } 
+}
